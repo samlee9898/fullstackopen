@@ -38,6 +38,9 @@ let persons = [
     }
 ]
 
+app.use(express.static('dist'))
+
+// i'm guessing this code would not work?
 app.get('/', (request, response) => {
   response.send('<h1>Hello World</h1>')
 })
